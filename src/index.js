@@ -1,7 +1,7 @@
 
 require('normalize.css/normalize.css');
 require('./styles/index.scss');
-require('./assets/8306-programming-animation.json'); 
+
 
 document.addEventListener("DOMContentLoaded", () => {
 

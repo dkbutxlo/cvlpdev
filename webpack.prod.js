@@ -140,9 +140,6 @@ module.exports = {
                 discardUnused: false
             },
             canPrint: true
-        }),
-        new CopyPlugin([
-            { from: 'src', to: 'dist' }
-          ])
+        }) 
     ]
 };
