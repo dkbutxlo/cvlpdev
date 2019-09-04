@@ -75,7 +75,11 @@ module.exports = {
                         loader: 'file-loader',
                     }
                 ]
-            }
+            },
+            {    // Load JSON for Lottie? Dawid Edit hehe 
+                test: /\.json$/,
+                loader: 'json-loader'
+        }
         ],
     },
     plugins: [

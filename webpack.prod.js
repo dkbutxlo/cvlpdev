@@ -1,12 +1,12 @@
 const path = require('path');
-
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin'); //installed via npm
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-
+const CopyPlugin = require('copy-webpack-plugin');
 const buildPath = path.resolve(__dirname, 'dist');
+
 
 module.exports = {
     devtool: 'source-map',
@@ -82,6 +82,10 @@ module.exports = {
                         loader: 'file-loader',
                     }
                 ]
+            }, 
+            {    // Load JSON for Lottie? Dawid Edit hehe 
+                    test: /\.json$/,
+                    loader: 'json-loader'
             }
         ]
     },
@@ -136,6 +140,9 @@ module.exports = {
                 discardUnused: false
             },
             canPrint: true
-        })
+        }),
+        new CopyPlugin([
+            { from: 'src', to: 'dist' }
+          ])
     ]
 };

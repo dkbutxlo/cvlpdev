@@ -4,12 +4,14 @@ require('./styles/index.scss');
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    const pluginsTriggerElement = document.getElementById('plugins-trigger');
-    const pluginsElement = document.getElementById('plugins');
-
-    const pluginsVisibleClass = "splash-overview-plugins__list--visible";
-
-    pluginsTriggerElement.onclick = () => {
-        pluginsElement.classList.toggle(pluginsVisibleClass);
-    }
+    lottie.loadAnimation({
+        container: '.lottiecont', // the dom element that will contain the animation
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/assets/8306-programming-animation.json' // the path to the animation json
+      });
+    
 });
+
+

@@ -21,6 +21,7 @@
     },
     "homepage": "",
     "dependencies": {
+        "lottie-web": "^5.5.8",
         "normalize.css": "^8.0.1"
     },
     "devDependencies": {
@@ -32,6 +33,7 @@
         "babel-preset-env": "^1.7.0",
         "bulma": "^0.7.5",
         "clean-webpack-plugin": "^0.1.19",
+        "copy-webpack-plugin": "^5.0.4",
         "css-loader": "^0.28.11",
         "cssnano": "^3.10.0",
         "favicons-webpack-plugin": "0.0.9",
