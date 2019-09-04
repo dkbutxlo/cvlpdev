@@ -29,7 +29,7 @@ font-style: normal;
 text-size-adjust: 100%;
 text-rendering:optimizeLegibility; 
 font-feature-settings: "pnum";
-background: rgb(255,255,255); 
+background: $blau; 
 margin: 0px; 
 padding:0px; 
 font-family: $font-family; 
@@ -51,10 +51,16 @@ columns {
     justify-content: center; 
     align-items: center;
     background: $blau;  
+    flex-direction: column;
 }
 
 column {
-    width: 48%;
+    width: 70%;
 }
 }
-
+.formular {
+    margin: 0 auto; 
+}
+#bm {
+    max-width: 500px; 
+}

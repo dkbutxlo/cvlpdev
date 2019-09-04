@@ -84,9 +84,14 @@ module.exports = {
                 ]
             }, 
             {    // Load JSON for Lottie? Dawid Edit hehe 
-                    test: /\.json$/,
-                    loader: 'json-loader'
-            }
+                test: /\.json$/,
+                type: 'javascript/auto',
+                use: [
+                    {
+                        loader: 'file-loader',
+                    }
+                ]
+        }
         ]
     },
     plugins: [

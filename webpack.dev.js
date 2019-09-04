@@ -79,7 +79,12 @@ module.exports = {
             {    // Load JSON for Lottie? Dawid Edit hehe 
                 test: /\.json$/,
                 type: 'javascript/auto',
-                loader: 'file-loader'
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {name: '[name].[ext]'}
+                    }
+                ]
         }
         ],
     },
