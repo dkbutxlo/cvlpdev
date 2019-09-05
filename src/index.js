@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
         autoplay: true,
         path: 'd.json' // the path to the animation json
       });
+
+      
       lottie.loadAnimation({
         container: document.getElementById('git'), // the dom element that will contain the animation
         renderer: 'svg',
@@ -28,6 +30,14 @@ document.addEventListener("DOMContentLoaded", () => {
         autoplay: true,
         path: 'github.json' // the path to the animation json
       });
+
+      // lottie.addEventListener("mouseenter", function () {
+      //   lottie.play();
+      //   });
+        
+      //   lottie.addEventListener("mouseleave", function () {
+      //   lottie.stop();
+      // });
 });
 
 
