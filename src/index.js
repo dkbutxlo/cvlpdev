@@ -3,6 +3,7 @@ require('normalize.css/normalize.css');
 require('./styles/index.scss');
 require('./assets/8306-programming-animation.json'); 
 import lottie from 'lottie-web';
+import abc from ('./abc.js'); 
 
 document.addEventListener("DOMContentLoaded", () => {
     lottie.loadAnimation({
