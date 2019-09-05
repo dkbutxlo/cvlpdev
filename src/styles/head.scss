@@ -1,8 +1,23 @@
 // Headbereich :)
 
-#bm {
-    max-width: 500px; 
+#d
+ {
+    max-width: 50px;
 }
+
+#git {
+    max-width: 30px; 
+    transition: .15s ease all;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+.flexend {
+    justify-content: flex-end !important;
+    text-align: right !important;
+}
+
+
 
 .titel {
 font-size: 24px; 
