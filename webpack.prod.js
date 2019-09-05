@@ -125,10 +125,10 @@ module.exports = {
                 coast: false,
                 favicons: true,
                 firefox: true,
-                opengraph: false,
-                twitter: false,
+                opengraph: true,
+                twitter: true,
                 yandex: false,
-                windows: false
+                windows: true
             }
         }),
         new MiniCssExtractPlugin({

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>cv-lp</title>
     <!-- Twitter Card data -->
     <meta name="twitter:card" value="Webpack basic starter project">
-    <meta name="Description" content="A simple webpack starter project for your basic web development needs."/>
+    <meta name="Description" content="A simple webpack starter project for your basic web development needs." />
     <!-- Open Graph data -->
     <meta property="og:title" content="Webpack basic starter project" />
     <meta property="og:type" content="article" />
@@ -21,42 +22,148 @@
 
 </head>
 <body>
-<cvlp-main>
-    <columns>
-<column>
-    <h1>
-        Das ist eine H1 und ein <span>span</span>
-    </h1>
-</column>
-<column>
-<p>Hier kommt noch eine Lottie Animation hin, weil das wirklich sehr cool ist.</p>
-<div id="bm"></div>
+    <section class="section is-medium">
+        <div class="container">
+            <div class="columns  is-vcentered">
+                <div class="column">
+                    <h1 class="titel"> Das ist eine sehr gute Überschrift für eine Headline oderso?</h1>
+                    <p class="untertitel"> Built with Bulma, Sass, Lottie, Webpack and Netlify.</p>
+                    <a href="#" class="cta">Das ist ein CTA.</a>
+                </div>
+                <div class="column has-text-centered">
 
-<h1>Das ist ein Test</h1></column>
-</columns>
+                    <div id="bm"></div>
 
-<columns>
-<column><h2>Das ist ein Formulartest mit Netlify</h2></column> 
-<column><form class="formular" name="contact" method="POST" data-netlify="true">
-        <p>
-          <label>Your Name: <input type="text" name="name" /></label>
-        </p>
-        <p>
-          <label>Your Email: <input type="email" name="email" /></label>
-        </p>
-        <p>
-          <label>Message: <textarea name="message"></textarea></label>
-        </p>
-        <p>
-            <div data-netlify-recaptcha="true"></div>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form></column>
+                    <span class="comment">Hier oben drüber ist eine Lottie Animation. :) </span>
+                </div>
+            </div>
+    </section>
+    <section class="section is-medium">
+        <div class="container">
+            <div class="columns is-mobile is-centered has-text-centered">
+                <div class="column is-half">
+                   <h2>Ein Titel</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-mobile">
+                <div class="column">
+                    <h2>Überschrift</h2>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                </div>
+                <div class="column">
+                    <h2>Überschrift</h2>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                </div>
+                <div class="column">
+                    <h2>Überschrift</h2>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="section is-medium">
+        <div class="container">
+            <div class="columns is-mobile is-centered has-text-centered">
+                <div class="column is-half">
+                    <div class="field">
+                        <label class="label">Name</label>
+                        <div class="control">
+                          <input class="input" type="text" placeholder="Text input">
+                        </div>
+                      </div>
+                      
+                      <div class="field">
+                        <label class="label">Username</label>
+                        <div class="control has-icons-left has-icons-right">
+                          <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+                          <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                          </span>
+                          <span class="icon is-small is-right">
+                            <i class="fas fa-check"></i>
+                          </span>
+                        </div>
+                        <p class="help is-success">This username is available</p>
+                      </div>
+                      
+                      <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control has-icons-left has-icons-right">
+                          <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                          <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                          </span>
+                          <span class="icon is-small is-right">
+                            <i class="fas fa-exclamation-triangle"></i>
+                          </span>
+                        </div>
+                        <p class="help is-danger">This email is invalid</p>
+                      </div>
+                      
+                      <div class="field">
+                        <label class="label">Subject</label>
+                        <div class="control">
+                          <div class="select">
+                            <select>
+                              <option>Select dropdown</option>
+                              <option>With options</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="field">
+                        <label class="label">Message</label>
+                        <div class="control">
+                          <textarea class="textarea" placeholder="Textarea"></textarea>
+                        </div>
+                      </div>
+                      
+                      <div class="field">
+                        <div class="control">
+                          <label class="checkbox">
+                            <input type="checkbox">
+                            I agree to the <a href="#">terms and conditions</a>
+                          </label>
+                        </div>
+                      </div>
+                      
+                      <div class="field">
+                        <div class="control">
+                          <label class="radio">
+                            <input type="radio" name="question">
+                            Yes
+                          </label>
+                          <label class="radio">
+                            <input type="radio" name="question">
+                            No
+                          </label>
+                        </div>
+                      </div>
+                      
+                      <div class="field is-grouped">
+                        <div class="control">
+                          <button class="button is-link">Submit</button>
+                        </div>
+                        <div class="control">
+                          <button class="button is-text">Cancel</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-</columns>
-</cvlp-main>
+    </div>
 </body>
+
 </html>
