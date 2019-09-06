@@ -4,11 +4,9 @@ require('./styles/index.scss');
 require('./assets/8306-programming-animation.json');
 require('./assets/d.json');
 require('./assets/github.json');
-require('./paperconfig.js');
+// require('./paperconfig.js');
 // require('./cursorcanvas.js');
 import lottie from 'lottie-web';
-import paper from 'paper';
-import simplexnoise from 'simplex-noise';
 
 document.addEventListener("DOMContentLoaded", () => {
     lottie.loadAnimation({

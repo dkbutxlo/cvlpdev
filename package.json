@@ -22,9 +22,7 @@
     "homepage": "",
     "dependencies": {
         "lottie-web": "^5.5.8",
-        "normalize.css": "^8.0.1",
-        "paper": "^0.12.3",
-        "simplex-noise": "^2.4.0"
+        "normalize.css": "^8.0.1"
     },
     "devDependencies": {
         "@fullhuman/postcss-purgecss": "^1.2.0",

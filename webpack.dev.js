@@ -76,7 +76,7 @@ module.exports = {
                     }
                 ]
             },
-            {    // Load JSON for Lottie? Dawid Edit hehe 
+            {    // Load JSON for Lottie? Dawid Edit hehe
                 test: /\.json$/,
                 type: 'javascript/auto',
                 use: [
