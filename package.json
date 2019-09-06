@@ -21,6 +21,7 @@
     },
     "homepage": "",
     "dependencies": {
+        "google-fonts-webpack-plugin": "^0.4.4",
         "lottie-web": "^5.5.8",
         "normalize.css": "^8.0.1"
     },
