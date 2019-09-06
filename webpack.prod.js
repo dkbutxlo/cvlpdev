@@ -4,7 +4,6 @@ const CleanWebpackPlugin = require('clean-webpack-plugin'); //installed via npm
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const GoogleFontsPlugin = require("google-fonts-webpack-plugin");
 const CopyPlugin = require('copy-webpack-plugin');
 const buildPath = path.resolve(__dirname, 'dist');
 
@@ -109,12 +108,6 @@ module.exports = {
               removeStyleLinkTypeAttributes: true,
               useShortDoctype: true
               }
-        }),
-        new GoogleFontsPlugin({
-            fonts: [
-                { family: "Source Sans Pro" },
-                { family: "Muli", variants: [ "400", "700" ] }
-            ]
         }),
         new CleanWebpackPlugin(buildPath),
         new FaviconsWebpackPlugin({
