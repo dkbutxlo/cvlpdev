@@ -4,6 +4,7 @@ require('./styles/index.scss');
 require('./assets/8306-programming-animation.json');
 require('./assets/d.json');
 require('./assets/github.json');
+require('./assets/gradientbg.json');
 // require('./paperconfig.js');
 // require('./cursorcanvas.js');
 import lottie from 'lottie-web';
@@ -31,6 +32,14 @@ document.addEventListener("DOMContentLoaded", () => {
         loop: true,
         autoplay: true,
         path: 'github.json' // the path to the animation json
+      });
+
+      lottie.loadAnimation({
+        container: document.getElementById('gradientbg'), // the dom element that will contain the animation
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'gradientbg.json' // the path to the animation json
       });
 
       // lottie.addEventListener("mouseenter", function () {
