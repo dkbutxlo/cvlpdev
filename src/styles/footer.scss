@@ -1,4 +1,4 @@
-
+.last {position: relative;}
 .bigmail {
     font-family: $font-text;
     font-size: 3vh;
@@ -11,4 +11,9 @@
 .copyright {
     font-family: $font-text;
     margin-top: 3%;
+    text-align: center;
+}
+
+.say--hello {
+    filter: grayscale(1);
 }

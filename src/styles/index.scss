@@ -1,7 +1,8 @@
 $blau : #6772e5;
 $white: #fff;
 $grey: #191A1E;
-$gold: #A58861; 
+$gold: #A58861;
+$lightgrey: rgb(110, 110, 110);
 $font-family : 'Muli', sans-serif;
 $font-text: 'Source Code Pro', sans-serif;
 
@@ -24,6 +25,23 @@ padding:0px;
 font-family: $font-family;
 }
 
+h1 {
+    font-family: $font-text;
+    font-size: 54px;
+    font-weight: 700;
+    letter-spacing: .025em;
+    }
+    
+h2 {
+        font-size: 42px;
+        font-family: $font-text;
+        line-height: 32px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .025em;
+        
+    }
+
 a {
     color: $gold;
     &:hover {
@@ -32,21 +50,16 @@ a {
     text-decoration: none;
 }
 
-h1 {
-font-family: $font-text;
-font-size: 54px;
+
+
+p {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
 }
 
-h2 {
-    font-size: 42px;
-    font-family: $font-text;
-    line-height: 32px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: .025em;
-    
-}
 
+.section {position:relative;}
 .has-text-centered {
     text-align: center!important;
 }

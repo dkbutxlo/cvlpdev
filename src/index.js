@@ -4,7 +4,8 @@ require('./styles/index.scss');
 require('./assets/8306-programming-animation.json');
 require('./assets/d.json');
 require('./assets/github.json');
-require('./assets/gradientbg.json');
+require('./assets/bear.gif');
+require('./assets/waves.json');
 import lottie from 'lottie-web';
 import modularLoad from 'modularload';
 
@@ -36,12 +37,13 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       lottie.loadAnimation({
-        container: document.getElementById('gradientbg'), // the dom element that will contain the animation
+        container: document.getElementById('waves'), // the dom element that will contain the animation
         renderer: 'svg',
-        loop: true,
+        loop: false,
         autoplay: true,
-        path: 'gradientbg.json' // the path to the animation json
+        path: 'waves.json' // the path to the animation json
       });
+
 
       // lottie.addEventListener("mouseenter", function () {
       //   lottie.play();

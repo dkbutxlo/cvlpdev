@@ -44,3 +44,17 @@ font-size: 50px;
         background: #191A1E;
 }
 
+.hq {
+    color: $gold;
+    font-size: 20px;
+    line-height: 0;
+    font-weight: 700;
+}
+
+#waves {
+    bottom: -10px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
