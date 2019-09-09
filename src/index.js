@@ -8,6 +8,8 @@ require('./assets/waves.json');
 import lottie from 'lottie-web';
 
 document.addEventListener("DOMContentLoaded", () => {
+
+  
       lottie.loadAnimation({
         container: document.getElementById('d'), // the dom element that will contain the animation
         renderer: 'svg',
