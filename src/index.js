@@ -3,11 +3,9 @@ require('normalize.css/normalize.css');
 require('./styles/index.scss');
 require('./assets/d.json');
 require('./assets/github.json');
-require('./assets/bear.gif');
+// require('./assets/bear.gif');
 require('./assets/waves.json');
 import lottie from 'lottie-web';
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
       lottie.loadAnimation({
