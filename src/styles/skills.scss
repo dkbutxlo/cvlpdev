@@ -1,0 +1,12 @@
+.skills {
+    position: relative;
+    color: $white;
+}
+.grauer--balken {
+    position: absolute;
+    width: 40%;
+    height: 100vh;
+    background: $grey;
+    left: 10%;
+    top: 20%;
+}
