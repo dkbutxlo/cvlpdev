@@ -25,19 +25,20 @@ padding:0px;
 font-family: $font-family;
 }
 
-body {
+html {
 	opacity: 1;
-	animation: animInitialHeader 2s cubic-bezier(0.7,0,0.3,1) both;
+	animation: animInitialHeader 3s cubic-bezier(0.7,0,0.3,1) both;
 }
 
-body {
-	animation-delay: 0.2s;
+html {
+	// animation-delay: 0.2s;
 }
 
 @keyframes animInitialHeader {
 	from { 
 		opacity: 0; 
-		transform: translate3d(0,800px,0); 
+        transform: translate3d(0,800px,0); 
+        background: $grey;
 	}
 }
 
