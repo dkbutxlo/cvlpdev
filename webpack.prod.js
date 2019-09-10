@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const buildPath = path.resolve(__dirname, 'dist');
 
 
@@ -18,6 +19,29 @@ module.exports = {
     node: {
         fs: 'empty'
     },
+    optimization: {
+  minimizer: [
+    new UglifyJSPlugin({
+    uglifyOptions: {
+      sourceMap: true,
+      compress: {
+        drop_console: true,
+        conditionals: true,
+        unused: true,
+        comparisons: true,
+        dead_code: true,
+        if_return: true,
+        join_vars: true,
+        warnings: false
+      },
+      output: {
+        comments: false
+      }
+    }
+  })
+  ]
+},
+
     module: {
         rules: [
             {
@@ -93,6 +117,7 @@ module.exports = {
                     }
                 ]
         }
+
         ]
     },
     plugins: [
