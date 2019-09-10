@@ -22,7 +22,6 @@
     "homepage": "",
     "dependencies": {
         "lottie-web": "^5.5.8",
-        "modularload": "^1.2.2",
         "normalize.css": "^8.0.1"
     },
     "devDependencies": {
