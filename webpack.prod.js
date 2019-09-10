@@ -19,29 +19,6 @@ module.exports = {
     node: {
         fs: 'empty'
     },
-    optimization: {
-  minimizer: [
-    new UglifyJSPlugin({
-    uglifyOptions: {
-      sourceMap: true,
-      compress: {
-        drop_console: true,
-        conditionals: true,
-        unused: true,
-        comparisons: true,
-        dead_code: true,
-        if_return: true,
-        join_vars: true,
-        warnings: false
-      },
-      output: {
-        comments: false
-      }
-    }
-  })
-  ]
-},
-
     module: {
         rules: [
             {
