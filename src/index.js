@@ -2,7 +2,6 @@
 require('normalize.css/normalize.css');
 require('./styles/index.scss');
 require('./assets/d.json');
-
 require('./assets/waves.json');
 
 import lottie from 'lottie-web';
@@ -36,11 +35,5 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
 
-      // lottie.addEventListener("mouseenter", function () {
-      //   lottie.play();
-      //   });
 
-      //   lottie.addEventListener("mouseleave", function () {
-      //   lottie.stop();
-      // });
 });
