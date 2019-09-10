@@ -6,10 +6,11 @@ require('./assets/github.json');
 // require('./assets/bear.gif');
 require('./assets/waves.json');
 import lottie from 'lottie-web';
+import aos from 'aos'; 
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  
+
       lottie.loadAnimation({
         container: document.getElementById('d'), // the dom element that will contain the animation
         renderer: 'svg',
