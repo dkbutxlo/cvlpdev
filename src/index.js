@@ -8,7 +8,7 @@ require('./assets/waves.json');
 import lottie from 'lottie-web';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import lozad from 'lozad'
+import lozad from 'lozad';
 
 const observer = lozad();
 observer.observe();
