@@ -6,12 +6,16 @@ require('./assets/github.json');
 require('./assets/waves.json');
 
 import lottie from 'lottie-web';
-import aos from 'aos';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import lozad from 'lozad'
 
 const observer = lozad();
 observer.observe();
+
 AOS.init();
+
+
 document.addEventListener("DOMContentLoaded", () => {
 
       lottie.loadAnimation({
