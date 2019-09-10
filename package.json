@@ -21,6 +21,7 @@
     },
     "homepage": "",
     "dependencies": {
+        "aos": "^2.3.4",
         "lottie-web": "^5.5.8",
         "normalize.css": "^8.0.1"
     },
