@@ -157,5 +157,10 @@ module.exports = {
             },
             canPrint: true
         })
-    ]
+    ],
+    optimization: {
+  minimizer: [new UglifyJsPlugin(
+
+  )],
+}
 };
