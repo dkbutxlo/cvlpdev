@@ -8,11 +8,13 @@ import lottie from 'lottie-web';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import lozad from 'lozad';
+import luxy from 'luxy.js';
 
 const observer = lozad();
 observer.observe();
 
 AOS.init();
+luxy.init();
 
 
 document.addEventListener("DOMContentLoaded", () => {
