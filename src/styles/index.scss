@@ -25,6 +25,7 @@ padding:0px;
 font-family: $font-family;
 }
 
+@media screen only and (min-width:1025px) {
 body::after {
 content: "";
 position: fixed;
@@ -44,7 +45,7 @@ transition: width 0.4s ease-in-out;
 transition: height 0.4s ease-in-out;
 font-size: 2rem;
 transform-origin: center
-}
+}}
 
 // html {
 // 	opacity: 1;
