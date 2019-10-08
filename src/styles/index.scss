@@ -25,7 +25,7 @@ padding:0px;
 font-family: $font-family;
 }
 
-@media screen only and (min-width:1025px) {
+@media screen and (min-width:1025px) {
 body::after {
 content: "";
 position: fixed;
