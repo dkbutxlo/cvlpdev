@@ -1,10 +1,10 @@
 
 require('normalize.css/normalize.css');
 require('./styles/index.scss');
-// require('./assets/d.json');
+require('./assets/d.json');
 // require('./assets/waves.json');
 
-// import lottie from 'lottie-web';
+import lottie from 'lottie-web';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 // import lozad from 'lozad';
@@ -21,26 +21,17 @@ document.onmousemove = function(e) {
       document.body.style.setProperty("--y", e.clientY + "px");
     };
     
-    // hover effect
-//     const clickableElements = document.querySelectorAll(".clickable");
-//     clickableElements.forEach(elm => {
-//       elm.addEventListener("mouseover", function() {
-//         document.body.classList.add("img-hovered");
-//       });
-//       elm.addEventListener("mouseleave", function() {
-//         document.body.classList.remove("img-hovered");
-//       });
-//     });
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
-      // lottie.loadAnimation({
-      //   container: document.getElementById('d'), // the dom element that will contain the animation
-      //   renderer: 'svg',
-      //   loop: true,
-      //   autoplay: true,
-      //   path: 'd.json' // the path to the animation json
-      // });
+      lottie.loadAnimation({
+        container: document.getElementById('d'), // the dom element that will contain the animation
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'd.json' // the path to the animation json
+      });
       //
       //
       // lottie.loadAnimation({
@@ -51,6 +42,14 @@ document.addEventListener("DOMContentLoaded", () => {
       //   path: 'waves.json' // the path to the animation json
       // });
 
-
+      const clickableElements = document.querySelectorAll(".clickable");
+      clickableElements.forEach(elm => {
+        elm.addEventListener("mouseover", function() {
+          document.body.classList.add("link-hovered");
+        });
+        elm.addEventListener("mouseleave", function() {
+          document.body.classList.remove("link-hovered");
+        });
+      });
 
 });
