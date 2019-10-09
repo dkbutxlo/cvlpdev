@@ -5,29 +5,29 @@ header {
     position: relative;
     z-index: 1;
     overflow: hidden;
-    margin-top: 1%; 
+    margin-top: 1%;
 }
 
-#d
- {
+#d {
     max-width: 80px;
 }
 
 #git {
     width: 30px;
-    max-width: 30px; 
+    max-width: 30px;
     transition: .15s ease all;
+
     &:hover {
         transform: scale(1.2);
     }
 }
 
 .titel {
-font-size: 50px; 
+    font-size: 50px;
 }
 
 .untertitel {
-    font-size: 25px; 
+    font-size: 25px;
     padding: 5px 0;
 }
 
@@ -58,10 +58,12 @@ font-size: 50px;
     width: 100%;
     overflow: hidden;
 }
+
 @media (max-width: 425px) {
     #waves {
         bottom: -10px;
     }
+
     .is-hidden-mobile {
         display: none;
     }
@@ -70,29 +72,5 @@ font-size: 50px;
 @media (max-width: 768px) {
     #waves {
         bottom: -120px;
-    }
-}
-.clickable {cursor:none;}
-.link-hovered::after {
-    width: 5em;
-    height: 5em;
-    content: "MAIL ME";
-    text-align: center;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Muli', sans-serif;
-    font-weight: 700;
-    animation: spin 4s infinite forwards cubic-bezier(1, 1, 1, 1);
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
     }
 }
