@@ -21,7 +21,15 @@ document.onmousemove = function(e) {
       document.body.style.setProperty("--y", e.clientY + "px");
     };
     
-
+    const clickableElements = document.querySelectorAll(".clickable");
+    clickableElements.forEach(elm => {
+      elm.addEventListener("mouseover", function() {
+        document.body.classList.add("link-hovered");
+      });
+      elm.addEventListener("mouseleave", function() {
+        document.body.classList.remove("link-hovered");
+      });
+    });
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -42,14 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
       //   path: 'waves.json' // the path to the animation json
       // });
 
-      const clickableElements = document.querySelectorAll(".clickable");
-      clickableElements.forEach(elm => {
-        elm.addEventListener("mouseover", function() {
-          document.body.classList.add("link-hovered");
-        });
-        elm.addEventListener("mouseleave", function() {
-          document.body.classList.remove("link-hovered");
-        });
-      });
+
 
 });
