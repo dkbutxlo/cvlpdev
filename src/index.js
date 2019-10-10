@@ -2,6 +2,7 @@
 require('normalize.css/normalize.css');
 require('./styles/index.scss');
 require('./assets/d.json');
+require('./assets/pc.json');
 // require('./assets/waves.json');
 
 import lottie from 'lottie-web';

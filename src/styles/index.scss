@@ -49,6 +49,29 @@ body {
         font-size: 2rem;
         transform-origin: center
     }
+    .link-hovered::after {
+        width: 5em;
+        height: 5em;
+        content: "MAIL ME";
+        text-align: center;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Muli', sans-serif;
+        font-weight: 700;
+        animation: spin 4s infinite forwards cubic-bezier(1, 1, 1, 1);
+    }
+    
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+    
+        100% {
+            transform: rotate(360deg);
+        }
+    }
 }
 
 // html {
