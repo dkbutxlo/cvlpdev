@@ -33,6 +33,13 @@ document.addEventListener("DOMContentLoaded", () => {
         autoplay: true,
         path: 'd.json' // the path to the animation json
       });
+      lottie.loadAnimation({
+        container: document.getElementById('pc'), // the dom element that will contain the animation
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'pc.json' // the path to the animation json
+      });
       //
       //
       // lottie.loadAnimation({
