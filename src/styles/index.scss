@@ -29,7 +29,7 @@ body {
 }
 
 @media screen and (min-width:1025px) {
-    body::after {
+    #main::after {
         content: "";
         position: fixed;
         z-index: 999;
