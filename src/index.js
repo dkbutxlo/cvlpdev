@@ -8,9 +8,7 @@ require('./assets/pc.json');
 import lottie from 'lottie-web';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
 import luxy from 'luxy.js';
-import anime from 'animejs/lib/anime.es.js';
 
 
 AOS.init();
