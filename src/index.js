@@ -22,8 +22,6 @@ document.onmousemove = function(e) {
       document.body.style.setProperty("--y", e.clientY + "px");
     };
 
-var clickableElements = document.querySelectorAll(".clickable");
-
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -50,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
       //   autoplay: true,
       //   path: 'waves.json' // the path to the animation json
       // });
-      
+      var clickableElements = document.querySelectorAll(".clickable");
       clickableElements.forEach(elm => {
         elm.addEventListener("mouseover", function() {
           document.body.classList.add("link-hovered");

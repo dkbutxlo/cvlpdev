@@ -49,7 +49,7 @@ body {
         font-size: 2rem;
         transform-origin: center
     }
-    .clickable::after {
+    .link-hovered::after {
         width: 5em;
         height: 5em;
         content: "MAIL ME";
