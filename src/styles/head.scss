@@ -1,9 +1,8 @@
 // Headbereich :)
 :root {
-	--background: #005;
-	--primary: #88D5BF;
-	--secondary: #5D6BF8;
-	--third: #e27fcb;
+	--background: $gold;
+	--primary: $gold;
+	--secondary:$grey;
 }
 
 header {
@@ -99,17 +98,17 @@ header {
 @keyframes morph {
  0% {
            border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
-           background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+        //    background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
    } 
    
    50% {
            border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
-           background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
+        //    background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
    }
  
    100% {
        border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
-       background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+    //    background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
    } 
 }
 
