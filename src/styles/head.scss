@@ -1,9 +1,9 @@
 // Headbereich :)
-:root {
-	--background: $gold;
-	--primary: $gold;
-	--secondary:$grey;
-}
+// :root {
+// 	--background: $gold;
+// 	--primary: $gold;
+// 	--secondary:$grey;
+// }
 
 header {
     padding: 0.5rem 1.5rem;
@@ -81,7 +81,7 @@ header {
 }
 
 .bg-illu {
-    background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+    background: linear-gradient(45deg, $gold 0%, $grey 100%);
  animation: morph 8s ease-in-out infinite;
  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
  height: 200px;
