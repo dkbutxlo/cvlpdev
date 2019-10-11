@@ -10,7 +10,24 @@
     right: 0;
 }
 
+#rotating-icons {
+    width: 10px;
+    height: 10px; 
+    background: grey; 
+    animation: kreisedas 5s infinite ease-in-out;
+    transform-origin: 50% 50%;
+    position: absolute; 
+    transition: all 1s ease-in-out; 
+    
+}
+
+
 .home {
     max-width: 100%;
     border-radius: 5px;
 }
+
+@keyframes kreisedas {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+    }

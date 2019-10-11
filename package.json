@@ -21,6 +21,7 @@
     },
     "homepage": "",
     "dependencies": {
+        "animejs": "^3.1.0",
         "aos": "^2.3.4",
         "lottie-web": "^5.5.9",
         "lozad": "^1.9.0",
@@ -52,7 +53,7 @@
         "style-loader": "^0.20.3",
         "uglifyjs-webpack-plugin": "^2.2.0",
         "url-loader": "^1.1.2",
-        "webpack": "^4.41.0",
+        "webpack": "^4.41.1",
         "webpack-cli": "^3.3.9",
         "webpack-dev-server": "^3.8.2"
     }

@@ -62,21 +62,6 @@ body {
     }
 }
 
-// html {
-// 	opacity: 1;
-//     animation: animInitialHeader 2s cubic-bezier(0.7,0,0.3,1) both;
-
-// }
-
-
-// @keyframes animInitialHeader {
-// 	from { 
-// 		opacity: 0; 
-//         // transform: translate3d(0,800px,0); 
-//         background: $grey;
-// 	}
-// }
-
 h1 {
     font-family: $font-text;
     font-size: 54px;
@@ -112,7 +97,6 @@ p {
     line-height: 28px;
 }
 
-#main {}
 
 .section {
     position: relative;

@@ -3,6 +3,7 @@ require('normalize.css/normalize.css');
 require('./styles/index.scss');
 require('./assets/d.json');
 require('./assets/pc.json');
+require('../src/animated.js');
 // require('./assets/waves.json');
 
 import lottie from 'lottie-web';
@@ -10,6 +11,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 // import lozad from 'lozad';
 import luxy from 'luxy.js';
+import anime from 'animejs/lib/anime.es.js';
 
 // const observer = lozad();
 // observer.observe();
