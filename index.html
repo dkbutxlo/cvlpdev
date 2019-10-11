@@ -11,7 +11,21 @@
     <!-- Mobile header color Windows Phone -->
     <meta name="msapplication-navbutton-color" content="#191A1E">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-
+    <style>
+        .link-hovered::after {
+        width: 5em;
+        height: 5em;
+        content: "MAIL ME";
+        text-align: center;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Muli', sans-serif;
+        font-weight: 700;
+        animation: spin 4s infinite forwards cubic-bezier(1, 1, 1, 1);
+        }
+    </style>
 </head>
 <body>
 <div id="luxy">
