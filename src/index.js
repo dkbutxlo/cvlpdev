@@ -49,4 +49,13 @@ document.addEventListener("DOMContentLoaded", () => {
           document.body.classList.remove("link-hovered");
         });
       });
+      var ctaElements = document.querySelectorAll(".cta");
+      ctaElements.forEach(elm => {
+        elm.addEventListener("mouseover", function() {
+          document.body.classList.add("cta-hovered");
+        });
+        elm.addEventListener("mouseleave", function() {
+          document.body.classList.remove("cta-hovered");
+        });
+      });
 });

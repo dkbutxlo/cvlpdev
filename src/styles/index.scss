@@ -26,6 +26,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: $font-family;
+    cursor: none;
 }
 
 @media screen and (min-width:1025px) {
@@ -81,11 +82,11 @@ h2 {
 
 a {
     color: $gold;
-
+    cursor: none;
     &:hover {
         color: $grey;
+        
     }
-
     text-decoration: none;
 }
 
@@ -105,7 +106,6 @@ p {
 .has-text-centered {
     text-align: center !important;
 }
-
 
 @import url('https://fonts.googleapis.com/css?family=Muli:400,700|Source+Code+Pro&display=swap');
 @import "bulmaconfig.scss";
