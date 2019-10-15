@@ -1,9 +1,4 @@
-// Headbereich :)
-// :root {
-// 	--background: $gold;
-// 	--primary: $gold;
-// 	--secondary:$grey;
-// }
+
 
 header {
     padding: 0.5rem 1.5rem;
@@ -17,15 +12,6 @@ header {
     max-width: 80px;
 }
 
-#git {
-    width: 30px;
-    max-width: 30px;
-    transition: .15s ease all;
-
-    &:hover {
-        transform: scale(1.2);
-    }
-}
 
 .titel {
     font-size: 50px;
@@ -37,18 +23,6 @@ header {
 }
 
 
-// .divider {
-//         position:absolute;
-//         top: 0;
-//         left: 0;
-//         width: 100%;
-//         height: 100%;
-//         overflow: hidden;
-//         transform: skewY(-12deg); 
-//         transform-origin: 0;
-//         background: #191A1E;
-// }
-
 .hq {
     color: $gold;
     font-size: 20px;
@@ -56,29 +30,14 @@ header {
     font-weight: 700;
 }
 
-#waves {
-    bottom: -500px;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    overflow: hidden;
-}
 
 @media (max-width: 425px) {
-    #waves {
-        bottom: -10px;
-    }
 
     .is-hidden-mobile {
         display: none;
     }
 }
 
-@media (max-width: 768px) {
-    #waves {
-        bottom: -120px;
-    }
-}
 
 .bg-illu {
     position: relative;
@@ -108,8 +67,3 @@ header {
 }
 
 
-// .zakopane {
-//     background: url(../assets/zakopaneweb.jpeg); 
-//     background-position: center center;
-//     background-size: cover; 
-// }

@@ -58,4 +58,14 @@ document.addEventListener("DOMContentLoaded", () => {
           document.body.classList.remove("cta-hovered");
         });
       });
+
+      if( typeof console === 'object' ) {
+        console.log(
+            '\n' +
+            'Hi there, fellow developer! Thanks for visiting.\n' +
+            'I’d love to hear what you think about my website :)\n' +
+            '\n' +
+            '— © Dawid Butelo.de 2019\n'
+        );
+    }
 });
