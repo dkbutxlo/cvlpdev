@@ -99,6 +99,45 @@ p {
     line-height: 28px;
 }
 
+/*SCROLLBAR*/
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background: #000;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::selection {
+    background-color: $gold;
+    color: #000;
+}
+
+/*GRID*/ 
+.grid-line {
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    min-height: 100vh;
+    width: 1px;
+    background-color: #000;
+    opacity: .05;
+}
+.grid-1 {
+    left: 8.33333vw;
+}
+
+.grid-2 {
+    left: 25vw; 
+}
+.grid-8 {
+    left: 66.66667vw;
+}
+
 
 .section {
     position: relative;
