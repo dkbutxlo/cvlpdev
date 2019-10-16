@@ -13,3 +13,9 @@
 //     padding-top: 5%;
 //     padding-bottom: 5%;
 // }
+
+section {
+    display: flex; 
+    align-items: center;
+    min-height: 80vh;
+}
