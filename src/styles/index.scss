@@ -27,6 +27,8 @@ body {
     padding: 0px;
     font-family: $font-family;
     cursor: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 @media screen and (min-width:1025px) {
