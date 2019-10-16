@@ -104,67 +104,78 @@ p {
 
 /*SCROLLBAR*/
 
-::-webkit-scrollbar {
-    width: 6px;
-}
-::-webkit-scrollbar-thumb {
-    background: #000;
-}
+// ::-webkit-scrollbar {
+//     width: 6px;
+// }
+// ::-webkit-scrollbar-thumb {
+//     background: #000;
+// }
 
-::-webkit-scrollbar-track {
-    background: transparent;
-}
+// ::-webkit-scrollbar-track {
+//     background: transparent;
+// }
 
-::selection {
-    background-color: $gold;
-    color: #000;
-}
+// ::selection {
+//     background-color: $gold;
+//     color: #000;
+// }
 
 /*GRID*/ 
+@media only screen  and (min-width:1920px) {
+    .grid-line {
+        position: absolute;
+        display: inline-block;
+        height: 100%;
+        min-height: 100vh;
+        width: 1px;
+        background-color: #000;
+        opacity: .05;
+    }
+    .grid-1 {
+        left: 8.33vw;
+    }
+    .grid-2 {
+        left: 16.63vw; 
+    }
+    .grid-3 {
+        left: 24.93vw; 
+    }
+    .grid-4 {
+        left: 33.23vw; 
+    }
+    .grid-5 {
+        left: 41.53vw; 
+    }
+    .grid-6 {
+        left: 49.83vw; 
+    }
+    .grid-6 {
+        left: 58.13vw; 
+    }
+    .grid-7 {
+        left: 66.43vw;
+    }
+    .grid-8 {
+        left: 74.73vw;
+    }
+    .grid-9 {
+        left: 83.03vw;
+    }
+    .grid-10 {
+        left: 91.33vw;
+    }
+}
 
-.grid-line {
-    position: absolute;
-    display: inline-block;
-    height: 100%;
-    min-height: 100vh;
-    width: 1px;
-    background-color: #000;
-    opacity: .05;
-}
-.grid-1 {
-    left: 8.33333vw;
-}
-
-.grid-2 {
-    left: 25vw; 
-}
-.grid-8 {
-    left: 66.66667vw;
-}
-
-
-.section {
-    position: relative;
-}
 
 .has-text-centered {
     text-align: center !important;
 }
 
-#bg {
-    background: url(../assets/bg.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    z-index: 1;
-}
 
 @import url('https://fonts.googleapis.com/css?family=Muli:400,700|Source+Code+Pro&display=swap');
 @import "bulmaconfig.scss";
 @import "head.scss";
 @import "cta.scss";
-@import "firstsection.scss";
-@import "skills.scss";
+// @import "firstsection.scss";
+// @import "skills.scss";
 @import "footer.scss";

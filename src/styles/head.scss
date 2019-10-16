@@ -32,7 +32,9 @@ header {
 
 
 @media (max-width: 425px) {
-
+    .is-4 {
+        padding: 1.75rem;
+    }
     .is-hidden-mobile {
         display: none;
     }
@@ -66,4 +68,15 @@ header {
     }
 }
 
+section {
+    display: flex; 
+    align-items: center;
+    min-height: 80vh;
+}
 
+.pc {
+    position: absolute; 
+    max-width: 800px; 
+    transform: scaleX(-1);
+    top: -10%;
+}
