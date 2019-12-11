@@ -1,6 +1,6 @@
 @charset "utf-8";
 $blau : #6772e5;
-$white: #fff;
+$white: whitesmoke;
 $grey: #191A1E;
 $gold: #A58861;
 $lightgrey: rgb(110, 110, 110);
@@ -8,6 +8,7 @@ $font-family : 'Muli',
 sans-serif;
 $font-text: 'Source Code Pro',
 sans-serif;
+$family-sans-serif: "Muli", sans-serif;
 
 * {
     box-sizing: border-box;
@@ -104,21 +105,21 @@ p {
 
 /*SCROLLBAR*/
 
-// ::-webkit-scrollbar {
-//     width: 6px;
-// }
-// ::-webkit-scrollbar-thumb {
-//     background: #000;
-// }
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background: #000;
+}
 
-// ::-webkit-scrollbar-track {
-//     background: transparent;
-// }
+::-webkit-scrollbar-track {
+    background: transparent;
+}
 
-// ::selection {
-//     background-color: $gold;
-//     color: #000;
-// }
+::selection {
+    background-color: $gold;
+    color: #000;
+}
 
 /*GRID*/ 
 @media only screen  and (min-width:1920px) {
@@ -167,15 +168,11 @@ p {
 }
 
 
-.has-text-centered {
-    text-align: center !important;
-}
-
 
 @import url('https://fonts.googleapis.com/css?family=Muli:400,700|Source+Code+Pro&display=swap');
 @import "bulmaconfig.scss";
 @import "head.scss";
 @import "cta.scss";
-// @import "firstsection.scss";
-// @import "skills.scss";
+// // @import "firstsection.scss";s
+// // @import "skills.scss";
 @import "footer.scss";
