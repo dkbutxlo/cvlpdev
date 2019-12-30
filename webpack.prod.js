@@ -1,8 +1,10 @@
 const path = require('path');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const glob = require('glob');
 const CleanWebpackPlugin = require('clean-webpack-plugin'); //installed via npm
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const PurgecssPlugin = require('purgecss-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
@@ -118,6 +120,26 @@ module.exports = {
               useShortDoctype: true
               }
         }),
+        new UglifyJsPlugin({
+            uglifyOptions:{
+              output: {
+                comments: false, // remove comments
+              },
+              compress: {
+                unused: true,
+                dead_code: true, // big one--strip code that will never execute
+               
+                drop_debugger: true,
+                conditionals: true,
+                evaluate: true,
+                drop_console: true, // strips console statements
+                sequences: true,
+                booleans: true,
+                	if_return: true,
+		join_vars: true
+              }
+            },
+          }),
         new CleanWebpackPlugin(buildPath),
         new FaviconsWebpackPlugin({
             // Your source logo
@@ -162,12 +184,28 @@ module.exports = {
                 },
                 discardUnused: false
             },
-            canPrint: true
-        })
+            canPrint: false
+        }),
+        new PurgecssPlugin({
+           
+          }),
     ],
     optimization: {
-  minimizer: [new UglifyJsPlugin(
+  minimizer: [new UglifyJsPlugin({
+    // sourceMap: true,
+    // parallel: true,
+    // conditionals: true
 
-  )],
-}
+	// 	conditionals: true,
+	// 	booleans: true,
+	// 	unused: true,
+	// 	if_return: true,
+	// 	join_vars: true,
+	// 	drop_console: true,
+	
+    // extractComments: true,
+    // drop_console: true
+  }),
+],
+},
 };
