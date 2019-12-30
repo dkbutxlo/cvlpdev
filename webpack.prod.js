@@ -1,10 +1,8 @@
 const path = require('path');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
-const glob = require('glob');
 const CleanWebpackPlugin = require('clean-webpack-plugin'); //installed via npm
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const PurgecssPlugin = require('purgecss-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
@@ -186,9 +184,6 @@ module.exports = {
             },
             canPrint: false
         }),
-        new PurgecssPlugin({
-           
-          }),
     ],
     optimization: {
   minimizer: [new UglifyJsPlugin({
