@@ -2,7 +2,7 @@
 require('normalize.css/normalize.css');
 require('./styles/index.scss');
 require('./assets/d.json');
-// require('./assets/pc.json');
+
 // require('./assets/waves.json');
 import Analytics from 'analytics'
 import googleAnalytics from '@analytics/google-analytics'
@@ -40,15 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
         loop: true,
         autoplay: true,
         path: 'd.json' // the path to the animation json
-      });
-
-
-      lottie.loadAnimation({
-        container: document.getElementById('pc'), // the dom element that will contain the animation
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        path: 'pc.json' // the path to the animation json
       });
 
 
