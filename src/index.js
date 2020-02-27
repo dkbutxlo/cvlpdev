@@ -4,7 +4,8 @@ require('./styles/index.scss');
 require('./assets/d.json');
 // require('./assets/pc.json');
 // require('./assets/waves.json');
-
+import Analytics from 'analytics'
+import googleAnalytics from '@analytics/google-analytics'
 import lottie from 'lottie-web';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -19,6 +20,17 @@ document.onmousemove = function(e) {
       document.body.style.setProperty("--y", e.clientY + "px");
     };
 
+    const analytics = Analytics({
+      app: 'awesome-app',
+      plugins: [
+        googleAnalytics({
+          trackingId: 'UA-159238801-1'
+        })
+      ]
+    })
+    
+    /* Track a page view */
+    analytics.page()
 
 document.addEventListener("DOMContentLoaded", () => {
 
