@@ -25,7 +25,7 @@ header {
 
 .hq {
     color: $gold;
-    font-size: 2vw;
+    font-size: 10vw;
     font-weight: 700;
 }
 
@@ -37,6 +37,26 @@ header {
     .is-hidden-mobile {
         display: none;
     }
+
+    .hq {
+        font-size: 20vw;
+    }
+
+    .copyright {
+        margin-top:50% !important;
+    }
+}
+
+@media (max-width: 769px) {
+
+    .hq {
+        font-size: 20vw;
+    }
+
+    .copyright {
+        margin-top:30% !important;
+    }
+
 }
 
 

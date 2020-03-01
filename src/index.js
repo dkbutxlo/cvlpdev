@@ -9,11 +9,11 @@ import googleAnalytics from '@analytics/google-analytics'
 import lottie from 'lottie-web';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import luxy from 'luxy.js';
+
 
 
 AOS.init();
-luxy.init();
+
 
 document.onmousemove = function(e) {
       document.body.style.setProperty("--x", e.clientX + "px");
