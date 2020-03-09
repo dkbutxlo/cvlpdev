@@ -79,10 +79,9 @@ h3 {
     font-size: 42px;
     font-family: $font-text;
     line-height: 32px;
-    font-weight: 700;
+    font-weight: 700!important;
     text-transform: uppercase;
     letter-spacing: .025em;
-
 }
 
 a {
