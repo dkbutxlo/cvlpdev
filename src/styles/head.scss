@@ -45,6 +45,10 @@ header {
     .copyright {
         margin-top:50% !important;
     }
+
+    .untertitel strong {
+        font-size: 6vw;
+    }
 }
 
 @media (max-width: 769px) {
@@ -55,6 +59,9 @@ header {
 
     .copyright {
         margin-top:30% !important;
+    }
+    .untertitel strong{
+        font-size: 6vw;
     }
 
 }
@@ -99,6 +106,61 @@ section {
     top: -10%;
 }
 
+.is-fullheight {
+    height: 50vh;
+}
+
+.untertitel {
+    font-size: 2vw;
+}
+
+.scroll-down {
+    width: 40px;
+    height: 40px;
+    background: #A58861;
+    position: absolute;
+    bottom: 50px;
+    left: 48%;
+    z-index: 3;
+    transition: all .2s ease-in-out;
+}
+
+.scroll-down:hover {
+    transform: translateY(12px);
+}
+
+.gg-arrow-down {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 20px;
+    height: 20px;
+    margin: 10px auto 0 auto; 
+    
+}
+.gg-arrow-down::after,
+.gg-arrow-down::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 4px
+}
+.gg-arrow-down::after {
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    transform: rotate(-45deg);
+    left: 7px
+}
+.gg-arrow-down::before {
+    width: 2px;
+    height: 16px;
+    left: 10px;
+    background: white;
+}
 // .textpile p,
 // .yesno {
 //     font-size: 2vw;
