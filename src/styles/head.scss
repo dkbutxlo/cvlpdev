@@ -30,7 +30,7 @@ header {
 }
 
 
-@media (max-width: 425px) {ö
+@media (max-width: 425px) {
     .is-4 {
         padding: 1.75rem;
     }
@@ -65,7 +65,11 @@ header {
     }
 
     .is-fullheight {
-        height: 40vh;
+        height: auto!important;
+    }
+
+    .scroll-down {
+        bottom: -50px !important;
     }
 
 }
