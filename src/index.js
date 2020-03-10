@@ -31,7 +31,9 @@ document.onmousemove = function(e) {
     
     /* Track a page view */
     analytics.page()
-
+    /* Start animations */
+    AOS.init();
+    
 document.addEventListener("DOMContentLoaded", () => {
 
       lottie.loadAnimation({
@@ -42,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
         path: 'd.json' // the path to the animation json
       });
 
-      AOS.init();
+     
       var clickableElements = document.querySelectorAll(".clickable");
       clickableElements.forEach(elm => {
         elm.addEventListener("mouseover", function() {
