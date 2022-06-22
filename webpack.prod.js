@@ -16,8 +16,10 @@ module.exports = {
         filename: '[name].[hash:20].js',
         path: buildPath
     },
-    node: {
-        fs: 'empty'
+    resolve: {
+            fallback: {
+                fs: false
+        }   
     },
     module: {
         rules: [
